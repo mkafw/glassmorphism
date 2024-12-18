@@ -2,6 +2,12 @@
 @tailwind components;
 @tailwind utilities;
 
+@layer base {
+  .navbar-item {
+    @apply px-4 py-1.5 rounded-full text-black/70 text-sm font-semibold hover:bg-black/10 hover:text-black transition duration-300;
+  }
+}
+
 :root {
   --color-bg1: rgb(226, 169, 255);
   --color-bg2: rgb(255, 255, 255);

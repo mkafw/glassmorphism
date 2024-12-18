@@ -1,6 +1,9 @@
+import Navbar from "@/sections/Navbar";
+
 export default function Home() {
   return (
-    <>
+    <div>
+      <Navbar />
       <div className="gradient-bg">
         <svg xmlns="http://www.w3.org/2000/svg">
           <defs>
@@ -28,6 +31,6 @@ export default function Home() {
           <div className="g5"></div>
         </div>
       </div>
-    </>
+    </div>
   );
 }
