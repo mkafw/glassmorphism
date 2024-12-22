@@ -8,6 +8,12 @@
   }
 }
 
+@layer utilities {
+  .container {
+    @apply lg:max-w-5xl;
+  }
+}
+
 :root {
   --color-bg1: rgb(226, 169, 255);
   --color-bg2: rgb(255, 255, 255);
@@ -30,7 +36,7 @@
 body {
   color: var(--foreground);
   background: var(--background);
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: poppinsReg;
 }
 
 @keyframes moveInCircle {
@@ -72,7 +78,7 @@ body {
 .gradient-bg {
   width: 100vw;
   height: 100vh;
-  position: relative;
+  position: fixed;
   overflow: hidden;
   background: linear-gradient(40deg, var(--color-bg1), var(--color-bg2));
   top: 0;
