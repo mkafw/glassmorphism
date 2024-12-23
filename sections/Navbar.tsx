@@ -11,7 +11,7 @@ const Navbar = () => {
           Home
         </a>
         <a href="#" className="navbar-item">
-          Projects
+          Portfolio
         </a>
         <a href="#" className="navbar-item">
           About
