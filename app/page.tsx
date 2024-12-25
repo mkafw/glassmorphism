@@ -1,4 +1,5 @@
 import Contact from "@/sections/Contact";
+import Footer from "@/sections/Footer";
 import GradientBg from "@/sections/GradientBg";
 import Hero from "@/sections/Hero";
 import Navbar from "@/sections/Navbar";
@@ -10,6 +11,7 @@ export default function Home() {
       <Navbar />
       <Hero />
       <Contact />
+      <Footer />
     </div>
   );
 }
