@@ -1,10 +1,4 @@
 import React from "react";
-import {
-  TwitterOriginal,
-  GithubOriginal,
-  FacebookPlain,
-  LinkedinPlain,
-} from "devicons-react";
 
 const Contact = () => {
   return (

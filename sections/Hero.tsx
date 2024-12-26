@@ -24,7 +24,7 @@ const Hero = () => {
           </p>
         </div>
         <div className="flex flex-col md:flex-row justify-center items-center mt-8">
-          <button className="inline-flex items-center gap-2 border border-black bg-white/30 backdrop-blur-lg shadow-lg px-6 h-12 rounded-xl hover:bg-black hover:text-white">
+          <button className="inline-flex items-center gap-2 border border-black bg-white/30 backdrop-blur-lg shadow-lg px-6 h-12 rounded-lg hover:bg-black hover:text-white">
             <span className="font-semibold">👋 Connect With Me</span>
           </button>
         </div>
