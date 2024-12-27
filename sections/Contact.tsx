@@ -17,7 +17,7 @@ const Contact = () => {
               <a
                 href="https://twitter.com"
                 target="_blank"
-                className="flex items-center justify-center px-4 py-2 text-white bg-gray-800 hover:bg-gray-900 rounded-lg shadow-md space-x-2"
+                className="flex items-center justify-center px-4 py-2 text-white bg-black hover:bg-gray-900 rounded-lg shadow-md space-x-2"
               >
                 <svg
                   className="fill-white size-4"
@@ -32,7 +32,7 @@ const Contact = () => {
               <a
                 href="https://facebook.com"
                 target="_blank"
-                className="flex items-center justify-center px-4 py-2 text-white bg-gray-800 hover:bg-gray-900 rounded-lg shadow-md space-x-2"
+                className="flex items-center justify-center px-4 py-2 text-white bg-black hover:bg-gray-900 rounded-lg shadow-md space-x-2"
               >
                 <svg
                   className="fill-white size-5"
@@ -47,7 +47,7 @@ const Contact = () => {
               <a
                 href="https://github.com"
                 target="_blank"
-                className="flex items-center justify-center px-4 py-2 text-white bg-gray-800 hover:bg-gray-900 rounded-lg shadow-md space-x-2"
+                className="flex items-center justify-center px-4 py-2 text-white bg-black hover:bg-gray-900 rounded-lg shadow-md space-x-2"
               >
                 <svg
                   className="fill-white size-5"
@@ -63,7 +63,7 @@ const Contact = () => {
               <a
                 href="https://linkedin.com"
                 target="_blank"
-                className="flex items-center justify-center px-4 py-2 text-white bg-gray-800 hover:bg-gray-900 rounded-lg shadow-md space-x-2"
+                className="flex items-center justify-center px-4 py-2 text-white bg-black hover:bg-gray-900 rounded-lg shadow-md space-x-2"
               >
                 <svg
                   className="fill-white size-5"
