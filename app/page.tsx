@@ -3,6 +3,7 @@ import Footer from "@/sections/Footer";
 import GradientBg from "@/sections/GradientBg";
 import Hero from "@/sections/Hero";
 import Navbar from "@/sections/Navbar";
+import Portfolio from "@/sections/Portfolio";
 import Skills from "@/sections/Skills";
 
 export default function Home() {
@@ -11,6 +12,7 @@ export default function Home() {
       <GradientBg />
       <Navbar />
       <Hero />
+      <Portfolio />
       <Skills />
       <Contact />
       <Footer />
