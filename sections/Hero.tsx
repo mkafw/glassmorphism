@@ -6,7 +6,7 @@ const Hero = () => {
       <div className="container">
         <div className="max-w-lg mx-auto">
           <div className="flex justify-center items-center">
-            <div className="relative w-50 h-50 rounded-full overflow-hidden border border-white/20 bg-white/30 backdrop-blur-lg shadow-lg">
+            <div className="relative w-50 h-50 rounded-full overflow-hidden border-white/20 border-4 backdrop-blur-lg shadow-lg">
               <img
                 src="https://randomuser.me/api/portraits/men/17.jpg"
                 alt="Profile Picture"
