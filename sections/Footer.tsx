@@ -11,11 +11,17 @@ const Footer = () => {
             reserved.
           </div>
           <nav className="flex flex-col md:flex-row items-center gap-2">
-            <a href="#" className="inline-flex items-center gap-1.5">
+            <a
+              href="https://github.com/taufiqfharhan/glassmorphism-portfolio-nextjs"
+              className="inline-flex items-center gap-1.5"
+            >
               <span className="font-semibold">GlassMorphism Portfolio</span>
             </a>
             <span>by</span>
-            <a href="#" className="inline-flex items-center gap-1.5">
+            <a
+              href="https://www.taufiqfharhan.com"
+              className="inline-flex items-center gap-1.5"
+            >
               <span className="font-semibold">Taufiq Fharhan</span>
             </a>
           </nav>
