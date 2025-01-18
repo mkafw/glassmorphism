@@ -14,7 +14,7 @@ const Hero = () => {
               />
             </div>
           </div>
-          <h1 className="font-serif text-3xl md:text-6xl text-center mt-10 tracking-wide">
+          <h1 className="text-3xl md:text-6xl text-center mt-10 tracking-wide">
             Hi, I'm John Doe.
           </h1>
           <p className="mt-4 text-center text-black/60 md:text-lg">
@@ -24,7 +24,7 @@ const Hero = () => {
           </p>
         </div>
         <div className="flex flex-col md:flex-row justify-center items-center mt-8">
-          <button className="inline-flex items-center gap-2 border border-black bg-white/30 backdrop-blur-lg shadow-lg px-6 h-12 rounded-lg hover:bg-black hover:text-white">
+          <button className="inline-flex items-center gap-2 border border-black bg-white/30 backdrop-blur-lg shadow-lg px-6 h-12 rounded-lg text-black hover:bg-black hover:text-white">
             <span className="font-semibold">👋 Connect With Me</span>
           </button>
         </div>
