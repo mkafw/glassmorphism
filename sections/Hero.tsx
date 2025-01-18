@@ -14,7 +14,7 @@ const Hero = () => {
               />
             </div>
           </div>
-          <h1 className="text-3xl md:text-6xl text-center mt-10 tracking-wide">
+          <h1 className="text-3xl md:text-6xl text-center mt-10 tracking-wide text-black">
             Hi, I'm John Doe.
           </h1>
           <p className="mt-4 text-center text-black/60 md:text-lg">
