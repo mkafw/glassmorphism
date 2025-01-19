@@ -5,7 +5,9 @@ const Skills = () => {
   return (
     <div className="py-20 lg:py-28">
       <div className="relative">
-        <h2 className="text-3xl md:text-5xl text-center mt-6">02. Skills</h2>
+        <h2 className="text-black text-3xl md:text-5xl text-center mt-6">
+          02. Skills
+        </h2>
         <p className="text-center md:text-lg lg:text-xl text-black/60 mt-4 max-w-2xl mx-auto">
           A snapshot of the tools and technologies I love working with to build
           amazing things.
