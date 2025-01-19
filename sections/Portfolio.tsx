@@ -64,13 +64,13 @@ const Portfolio = () => {
             >
               <div className="lg:grid lg:grid-cols-2 lg:gap-16">
                 <div className="lg:pb-16">
-                  <div className="text-gray- inline-flex gap-2 font-bold uppercase tracing-widest text-sm">
+                  <div className="text-black inline-flex gap-2 font-bold uppercase tracing-widest text-sm">
                     <span>{portfolioProject.company}</span>
                     <span>&bull;</span>
                     <span>{portfolioProject.year}</span>
                   </div>
 
-                  <h3 className="text-2xl mt-2 md:mt-5 md:text-4xl">
+                  <h3 className="text-black text-2xl mt-2 md:mt-5 md:text-4xl">
                     {portfolioProject.title}
                   </h3>
                   <hr className="border-t-2 border-black/10 mt-4 md:mt-5" />
