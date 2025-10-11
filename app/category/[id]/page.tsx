@@ -40,8 +40,9 @@ const categories = [
   },
 ];
 
-export default function CategoryPage({ params }: { params: { id: string } }) {
-  const category = categories.find((c) => c.id === params.id);
+export default async function CategoryPage({ params }: { params: Promise<{ id: string }> }) {
+  const { id } = await params;
+  const category = categories.find((c) => c.id === id);
   if (!category) return <div className="text-center text-white py-24">未找到该主题</div>;
   return (
     <section className="container py-16 lg:py-24">

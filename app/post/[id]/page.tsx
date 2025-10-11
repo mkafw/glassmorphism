@@ -7,16 +7,17 @@ import Card from "@/components/Card";
 import Link from "next/link";
 
 // 这里将来用 Notion API 获取文章详情
-export default function PostDetail({ params }: { params: { id: string } }) {
+export default async function PostDetail({ params }: { params: Promise<{ id: string }> }) {
+  const { id } = await params;
   // mock 数据
   const post = {
-    id: params.id,
-    title: params.id === "1" ? "如何打造玻璃拟态风格的个人博客" : "Next.js 部署到 Netlify 全流程",
+    id,
+    title: id === "1" ? "如何打造玻璃拟态风格的个人博客" : "Next.js 部署到 Netlify 全流程",
     content:
-      params.id === "1"
+      id === "1"
         ? `详细介绍如何用 Next.js + Tailwind CSS 打造毛玻璃风格的个人博客，包括设计理念、代码实现和视觉优化建议。`
         : `本篇文章将带你一步步完成 Next.js 项目在 Netlify 上的部署，包括静态导出、配置和上线。`,
-    date: params.id === "1" ? "2025-10-10" : "2025-10-05",
+    date: id === "1" ? "2025-10-10" : "2025-10-05",
   };
 
   return (
