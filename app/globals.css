@@ -35,28 +35,31 @@
   background: #222222;
 }
 
+
 :root {
-  --color-bg1: rgb(226, 169, 255);
-  --color-bg2: rgb(255, 255, 255);
-  --color1: 18, 113, 255;
-  --color2: 221, 74, 255;
-  --color3: 100, 220, 255;
-  --color4: 255, 85, 85;
-  --color5: 180, 180, 50;
+  --color-bg1: #1a102a;
+  --color-bg2: #2d174d;
+  --color1: 120, 86, 255;   /* 紫蓝 */
+  --color2: 221, 74, 255;   /* 紫 */
+  --color3: 100, 220, 255;  /* 蓝青 */
+  --color4: 180, 86, 255;   /* 紫偏蓝 */
+  --color5: 255, 0, 255;    /* 亮紫 */
   --circle-size: 100%;
-  --blending: hard-light;
+  --blending: screen;
 }
+
 
 @media (prefers-color-scheme: dark) {
   :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
+    --background: #12092b;
+    --foreground: #f3eaff;
   }
 }
 
+
 body {
   color: var(--foreground);
-  background: var(--background);
+  background: radial-gradient(ellipse at 60% 40%, #2d174d 0%, #12092b 100%) fixed;
   font-family: poppinsReg;
 }
 
