@@ -5,16 +5,16 @@ const databaseId = process.env.NOTION_DB_ID!;
 
 // 获取所有文章（分页可扩展）
 export async function getPosts() {
-  // 用最新 SDK，类型断言规避类型错误
   const response = await (notion.databases as any).query({ database_id: databaseId });
-  return response.results.map((page: any) => ({
-  id: (page as any).id,
-  title: (page as any).properties?.Name?.title?.[0]?.plain_text || "",
-  created: (page as any).created_time,
-  last_edited: (page as any).last_edited_time,
-  archived: (page as any).archived,
-    // 可扩展更多字段
-  }));
+  return response.results
+    .filter((page: any) => 'properties' in page)
+    .map((page: any) => ({
+      id: page.id,
+      title: page.properties.Name?.title?.[0]?.plain_text || "",
+      created: page.created_time,
+      last_edited: page.last_edited_time,
+      archived: page.archived,
+    }));
 }
 
 // 新增文章（支持文字和图片）
