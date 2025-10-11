@@ -1,3 +1,8 @@
+// 用于静态生成所有文章详情页面
+export function generateStaticParams() {
+  // 这里可以根据实际数据源动态生成所有 id
+  return [{ id: "1" }, { id: "2" }, { id: "3" }];
+}
 import Card from "@/components/Card";
 import Link from "next/link";
 

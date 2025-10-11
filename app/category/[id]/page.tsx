@@ -1,5 +1,10 @@
+// 用于静态生成所有分类页面
+export function generateStaticParams() {
+  return categories.map((category) => ({ id: category.id }));
+}
 import Card from "@/components/Card";
 import Link from "next/link";
+
 
 // mock 主题和文章数据
 const categories = [
