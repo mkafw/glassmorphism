@@ -1,13 +1,31 @@
 # Netlify 配置文件
 
 [build]
-  command = "npm run export"
+  # 使用 next build 而不是 export，让 @netlify/plugin-nextjs 处理导出
+  command = "npm run build"
   publish = "out"
 
+  # 添加构建缓存配置
+  [build.caching]
+    paths = [
+      "node_modules/.cache",
+      ".next/cache"
+    ]
+
 [build.environment]
-  NODE_VERSION = "18"
+  # 使用最新的 Node.js LTS 版本
+  NODE_VERSION = "20"
+  # 启用 Next.js 遥测
+  NEXT_TELEMETRY_DISABLED = "1"
+  # Notion API 配置（如果需要的话）
+  # NOTION_TOKEN = ""
+  # NOTION_DB_ID = ""
 
 [[redirects]]
   from = "/api/*"
   to = "/api/:splat"
   status = 200
+
+# Next.js 插件配置
+[[plugins]]
+  package = "@netlify/plugin-nextjs"
