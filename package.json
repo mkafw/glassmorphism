@@ -19,7 +19,7 @@
   },
   "devDependencies": {
     "@eslint/eslintrc": "^3",
-    "@netlify/functions"："^5.1.0"
+    "@netlify/functions":"^5.1.0"
     "@types/node": "^20",
     "@types/react": "^19",
     "@types/react-dom": "^19",
